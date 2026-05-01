@@ -10,7 +10,7 @@ def health(request):
 
 
 def frontend(request):
-    index_path = os.path.join(settings.BASE_DIR, '..', 'frontend', 'index.html')
+    index_path = os.path.join(settings.BASE_DIR, 'templates', 'index.html')
     return FileResponse(open(index_path, 'rb'), content_type='text/html')
 
 
