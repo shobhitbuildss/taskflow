@@ -1,2 +1,1 @@
-web: gunicorn taskmanager.wsgi --log-file -
-release: python manage.py migrate --no-input
+web: gunicorn taskmanager.wsgi --log-file - --bind 0.0.0.0:$PORT
